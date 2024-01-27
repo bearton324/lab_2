@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>Музичний каталог by Максим Гриневич</title>
+	<style>
+		body {
+			background-color: rgb(255, 245, 239);
+		}
+
+		header {
+			background: rgb(168, 189, 202);
+			text-align: left;
+			font-weight: bold;
+			padding: 5px 5px 5px 5px;
+			border-radius: 10px;
+		}
+
+		table {
+			border-collapse: collapse;
+			table-layout: fixed;
+			width: 100%;
+		}
+
+		table, th, tr {
+			border: 2px solid rgb(58, 101, 129);
+		}
+
+		footer {
+			position: fixed;
+			bottom: 0;
+		}
+
+		.nav-bar {
+			list-style: none;
+			padding: 0;
+			font-family: 'Courier New', Courier, monospace;
+			font-size: larger;
+		}
+
+		.nav-bar>li {
+			display: inline;
+			margin-right: 7px;
+		}
+
+		.button {
+			background-color: rgb(130, 112, 141);
+			border-radius: 5px;
+			border-color: rgb(46, 102, 83);
+			color: blanchedalmond;
+		}
+
+		.center {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		.contur {
+			outline: dotted;
+			outline-color: cornflowerblue;
+			text-align: center;
+			margin-top: 150px;
+			width: 100%;
+			color: crimson;
+		}
+
+		#copyright {
+			background-color: cornflowerblue;
+			width: 100%;
+			left: 0;
+			opacity: 50%;
+		}
+
+		#personal-suggestions,
+		#hot-new {
+			display: inline-block;
+		}
+
+		#personal-suggestions {
+			margin-right: 500px;
+			margin-left: 50px;
+		}
+
+		#personal-suggestions ul {
+			list-style-type: circle;
+		}
+
+		#hot-new ol {
+			list-style-type: upper-roman;
+		}
+
+		#animated-pic {
+			animation: rotation;
+			animation-duration: 5s;
+			animation-delay: 2s;
+		}
+
+		@keyframes rotation {
+			from {
+				transform: rotate(0deg);
+			}
+
+			to {
+				transform: rotate(360deg);
+			}
+		}
+		
+		* {
+			font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+		}
+		h1 + ul {
+			color: rgb(40, 38, 151);
+		}
+		p[class="att"] {
+			font-style: italic;
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+		<nav>
+			<ul class="nav-bar">
+				<li><a href="Grinevich_main_page.html">Головна сторінка</a></li>
+				<li>Гаряче</li>
+				<li>Альбоми</li>
+				<li>Виконавці</li>
+				<li>Списки відтворення</li>
+				<li>Особистий кабінет</li>
+				<li><a href="Grinevich_info_page.html">Про нас</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section id="search-bar">
+			<form action="">
+				<input type="text">
+				<input type="submit" value="Пошук" class="button">
+				<img src="images/search.png" height="30px" width="30px" alt="">
+			</form>
+		</section>
+		<section id="main-content">
+			<img src="images/music_pic_4.png" height="300px" width="300px" alt="" id="animated-pic" class="center">
+			<div id="personal-suggestions" class="a">
+				<p>
+				<h1>Особиста підбірка</h1>
+				<ul>
+					<li>Sail by AWOLNATION</li>
+					<li>Strobe by Deadmau5</li>
+					<li>Lost on You by LP</li>
+					<li>Never Fade Away by SAMURAI</li>
+					<li>CASTLE OF GLASS by Linkin Park</li>
+					<li>Weeping Dawn by Borislav Slavov</li>
+					<li>Down By The River by Borislav Slavov</li>
+					<br>
+				</ul>
+				</p>
+			</div>
+			<div id="hot-new" class="b">
+				<h3 style="color:rgb(216, 73, 168)">Гарячі новинки</h3>
+				<ol>
+					<li>Love Lines by LP</li>
+					<li>Black Friday by Tom Odell</li>
+					<li>The Creator by Hans Zimmer</li>
+					<li>Candy Pop by AWOLNATION</li>
+					<li>Mrs. Postman by Black Pumas</li>
+					<li>Alone In A Crowd by Oliver Tree</li>
+					<li>Obsessed by Royal Deluxe</li>
+					<br>
+				</ol>
+			</div>
+			<div id="albums">
+				<h3 class="contur">Альбоми</h3>
+				<table>
+					<tr>
+						<th>TRON: Legacy</th>
+						<th>Smoke + Mirrors</th>
+						<th>Run Boy Run</th>
+						<th>Inception</th>
+					</tr>
+					<tr>
+						<th>Daft Punk</th>
+						<th>Imagine Dragons</th>
+						<th>Joanh Lemuan</th>
+						<th>Hans Zimmer</th>
+					</tr>
+				</table>
+			</div>
+		</section>
+	</main>
+
+	<footer id="copyright">
+		<p class="att">© Copyright by Grinevich -- 2023 -- +380687410953</p>
+	</footer>
+</body>
+
+</html>
